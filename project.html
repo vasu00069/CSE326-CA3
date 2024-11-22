@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grab and Grub</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            background-image: url("res.jpeg");
+        }
+        nav {
+            background-color: #340d06;
+            color: #fff;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        nav a {
+            color: #fff;
+            margin: 0 15px;
+            text-decoration: none;
+            font-size: 1.1em;
+        }
+        .hero {
+          
+            color: rgb(223, 188, 188);
+            height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            text-shadow: 0 0 15px goldenrod, 0 0 30px antiquewhite;
+        }
+        .hero h1 {
+            font-size: 5em;
+            margin: 0;
+        }
+        .container.h2{ text-align: center ;
+        justify-content: center;}
+        .container {
+            padding: 20px;
+        }
+        .featured-items {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        .featured-item {
+            border: 1px solid #ddd;
+            padding: 15px;
+            text-align: center;
+            border-radius: 10px;
+            background-color: #f9f9f9;
+        }
+        .featured-item img {
+            max-width: 100%;
+            border-radius: 10px;
+        }
+        .featured-item h3 {
+            margin: 10px 0;
+        }
+        .featured-item p {
+            color: #555;
+        }
+        .featured-item .price {
+            font-weight: bold;
+            color: #ff6347;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+        .h2{
+            color: rgb(223, 188, 188);
+            text-shadow: 5px gold;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="home">Home</a>
+        <a href="menu">Menu</a>
+        <a href="contact">Contact</a>
+        <a href="about">About</a>
+    </nav>
+
+    <section class="hero">
+        <h1>Welcome to Grab and Grub</h1>
+    </section>
+
+    <div class="container">
+        <h2 class="h2">Our Delicious Menu</h2>
+        <div class="featured-items">
+            <div class="featured-item">
+                <img src="https://www.foodandwine.com/thmb/DI29Houjc_ccAtFKly0BbVsusHc=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/crispy-comte-cheesburgers-FT-RECIPE0921-6166c6552b7148e8a8561f7765ddf20b.jpg" alt="Burger" height="200px" width="300px">
+                <h3>Classic Cheeseburger</h3>
+                <p>A juicy burger with cheese, lettuce, and tomato.</p>
+                <p class="price">Rs120</p>
+            </div>
+            <div class="featured-item">
+                <img src="https://www.yumcurry.com/wp-content/uploads/2020/06/pizza-margherita-recipe.jpg" alt="Pizza" height="200px" width="300px">
+                <h3>Margherita Pizza</h3>
+                <p>Traditional Italian pizza with mozzarella and basil.</p>
+                <p class="price">Rs250</p>
+            </div>
+            <div class="featured-item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6IXHC6_ySQC1Pm5XOaIOJCPrCcYr64MG2vw&s" alt="Pasta" height="200px" width="300px">
+                <h3>Spaghetti Bolognese</h3>
+                <p>Rich meat sauce over perfectly cooked spaghetti.</p>
+                <p class="price">Rs250</p>
+            </div>
+            <div class="featured-item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSkILGCenLky067CIEbZfnncaye3HeQzknbg&s" alt="Steak" height="200px" width="300px">
+                <h3>Grilled Ribeye Steak</h3>
+                <p>Succulent steak grilled to perfection.</p>
+                <p class="price">Rs350</p>
+            </div>
+            <div class="featured-item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUUO7I6p5hcfCMYa6URocjt0M1RzVEsf5fHg&s" alt="Salad" height="200px" width="300px">
+                <h3>Caesar Salad</h3>
+                <p>Fresh romaine with Caesar dressing and croutons.</p>
+                <p class="price">Rs150</p>
+            </div>
+            <div class="featured-item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHg1mdvFz8NzKX3Ne5FzJ1luLZ8K8uAO3UyA&s" alt="Tacos" height="200px" width="300px">
+                <h3>Fish Tacos</h3>
+                <p>Soft tacos filled with seasoned fish and fresh slaw.</p>
+                <p class="price">Rs300</p>
+            </div>
+            <div class="featured-item">
+                <img src="https://niihaw.com/cdn/shop/products/shop_sushi_small_platter_1000x.jpg?v=1659431475" alt="Sushi" height="200px" width="300px">
+                <h3>Sushi Platter</h3>
+                <p>A variety of sushi rolls served fresh.</p>
+                <p class="price">Rs150</p>
+            </div>
+            <div class="featured-item">
+                <img src="https://eatwithclarity.com/wp-content/uploads/2023/02/spicy-ramen-noodles.jpg" alt="Ramen" height="200px" width="300px">
+                <h3>Spicy Ramen Bowl</h3>
+                <p>A warm bowl of ramen with a kick of spice.</p>
+                <p class="price">Rs400</p>
+            </div>
+            <div class="featured-item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjL-7YEbgS4h8vwT3irs7yMlR5twIPPSDhUg&s" alt="Dessert" height="200px" width="300px">
+                <h3>Chocolate Lava Cake</h3>
+                <p>Rich, molten chocolate cake with vanilla ice cream.</p>
+                <p class="price">Rs80</p>
+            </div>
+            <div class="featured-item">
+                <img src="https://thefamilydinnerproject.org/wp-content/uploads/2014/07/Easy-grilled-chicken-sandwich.jpg" alt="Sandwich" height="200px" width="300px">
+                <h3>Grilled Chicken Sandwich</h3>
+                <p>Grilled chicken breast with fresh veggies on a bun.</p>
+                <p class="price">Rs120</p>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 Grab and Grub. All rights reserved.</p>
+    </footer>
+    
+
+</body>
+</html>
